@@ -62,7 +62,7 @@ db.sqlite3
 db.sqlite3-journal
 
 # Docker stuff:
-docker-compose.yaml
+
 
 # Flask stuff:
 instance/

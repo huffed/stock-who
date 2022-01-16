@@ -1,0 +1,5 @@
+tickers = {
+  "AZN",
+  "GSK",
+  "SNN"
+}

@@ -1,3 +1,8 @@
+/* Global Content */
+body {
+  font-family: Arial;
+}
+
 /* Dropdown Button */
 .dropbtn {
   background-color: #ddd;
