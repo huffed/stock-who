@@ -16,8 +16,11 @@
 </div>
 
 <?php
-  $command = escapeshellcmd('python3 ../../py/stock.py');
-  $output = shell_exec($command);
+  echo "test";
+?>
+
+<?php
+  $output = shell_exec(escapeshellcmd("python3 ../../py/stock.py"));
   echo $output;
 ?>
 
