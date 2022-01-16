@@ -16,6 +16,7 @@
 </div>
 
 <?php
+echo phpinfo();
 ?>
 
 </body>

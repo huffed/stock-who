@@ -1,12 +1,16 @@
-version: "3"
+version: "3.3"
 
 services:
     web:
-        image: nginx
+        image: nginx:latest
+        container_name: web
         ports:
-            - 8000:80
+            - "8000:80"
         volumes:
-            - ./src:/usr/share/nginx/html
-            - ./site.conf:etc/nginx/conf.d/site.conf
-    # php:
-    #     image: php:7-fpm
+            - ./src:/src
+            - ./site.conf:/etc/nginx/conf.d/site.conf
+    php:
+        image: php:7-fpm
+        container_name: php
+        volumes:
+            - ./src:/src
